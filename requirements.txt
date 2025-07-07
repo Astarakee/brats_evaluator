@@ -1,0 +1,4 @@
+panoptica==1.4.0
+auxiliary
+pandas
+tqdm
