@@ -1,30 +1,36 @@
 # BraTS Evaluation Pipline
 
 This repository is inspired by [Panoptica evaliation pipeline](https://github.com/BrainLesion/panoptica) 
-and [GANDLF](https://github.com/mlcommons/GaNDLF) to compute the segmentation evaluation metrics for [BraTS 2025 challenges](https://www.synapse.org/Synapse:syn64153130/wiki/630130).
+to compute the segmentation metrics for [BraTS 2025 challenges](https://www.synapse.org/Synapse:syn64153130/wiki/630130).
 
-- GANDLF (Generally Nuanced Deep Learning Framework) is an open-source deep learning framework specifically designed for
-medical imaging. Its primary goal is to lower the barrier to entry for developing, training, and deploying robust deep
-learning models for tasks like segmentation, classification, and regression in medical images.
 - Panoptica is a comprehensive package with three main modules: Instance Approximator, Instance Matcher,
-and Instance Evaluator. This repository is inspired by the [evaluation pipeline](https://github.com/neuronflow/brats_modality_ablation_nnUnet/blob/main/panoptica_evaluation.py).
+and Instance Evaluator. 
+This repository is inspired by the [Panoptica evaluation pipeline](https://github.com/neuronflow/brats_modality_ablation_nnUnet/blob/main/panoptica_evaluation.py).
 
 - The evaluation pipeline computes the standard segmentation metrics both on subject-wise and lesion-wise levels.
-- BraTS 2025 cluster of challenges includ[analyze_brats.py](analyze_brats.py)es 7 segmentation tasks. While this pipeline can be employed for 
-quantification of all 7 tasks, for 2025 challenge it is used only for the [Brain Metastais segmentation task](https://www.synapse.org/Synapse:syn64153130/wiki/631058).
+- BraTS 2025 cluster of challenges includes 7 segmentation tasks.
+While this pipeline can be employed for quantification of all 7 tasks, it is used only for the [Brain Metastais segmentation task](https://www.synapse.org/Synapse:syn64153130/wiki/631058) in BraTS 2025 challenges.
 
 
 ## Installation
 
-With a Python 3.10+ environment, you can install panoptica from [pypi.org](https://pypi.org/project/panoptica/)
+`Panoptica` is the main requirement for this pipeline.
+With a Python 3.10+ environment, you can install it from [pypi.org](https://pypi.org/project/panoptica/)
 ```
 pip install panoptica
 ```
+followed by cloning the repo:
+```
+git clone https://github.com/Astarakee/brats_evaluator.git
+
+cd /path/to/brats_evaluator
+```
+
 or alternatively:
 ```
-git clone NAME
+git clone https://github.com/Astarakee/brats_evaluator.git
 
-cd /path/to/NAME
+cd /path/to/brats_evaluator
 
 pip install -r requirements.txt
 ```
