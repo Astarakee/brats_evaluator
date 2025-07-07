@@ -78,10 +78,10 @@ different metrics. For the provided Brain Metastasis example, the following metr
 "global_bin_hd95": XX,
 "global_bin_nsd": XX
 ```
-from which global_bin_dsc, global_bin_hd95, global_bin_nsd, prec, recl represent the subject-wise metrics and
-the rest are the calculated lesion-wise metrics.
+from which `global_bin_dsc`, `global_bin_hd95`, `global_bin_nsd`, `prec`, `recl` represent the following subject-wise metrics, respectively: dice, hausdorff, normalized surface distance, precision, recall.
+The rest are the calculated lesion-wise metrics.
 
-Finally, note that the above-mentioned metrics are caclulated for the defined regions in the `config` file.
+Finally, note that the above-mentioned metrics are calculated for the defined regions in the `config` file.
 For Brain Metastasis, these regions include:
 ```
 et: enhancing tissue
@@ -91,4 +91,4 @@ tc: tumor core
 wt: whole tumor
 ```
 ## Reference
-For further details about the evaluation pipeline, we refer you the official [Panoptica package](https://github.com/BrainLesion/panoptica).
+For further details about the evaluation pipeline, we refer you to the official [Panoptica package](https://github.com/BrainLesion/panoptica).
