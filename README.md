@@ -1,6 +1,6 @@
-# BraTS Evaluation Pipline
+# BraTS Evaluation Pipeline
 
-This repository is inspired by [Panoptica evaliation pipeline](https://github.com/BrainLesion/panoptica) 
+This repository is inspired by [Panoptica evaluation pipeline](https://github.com/BrainLesion/panoptica) 
 to compute the segmentation metrics for [BraTS 2025 challenges](https://www.synapse.org/Synapse:syn64153130/wiki/630130).
 
 - Panoptica is a comprehensive package with three main modules: Instance Approximator, Instance Matcher,
@@ -9,7 +9,7 @@ This repository is inspired by the [Panoptica evaluation pipeline](https://githu
 
 - The evaluation pipeline computes the standard segmentation metrics both on subject-wise and lesion-wise levels.
 - BraTS 2025 cluster of challenges includes 7 segmentation tasks.
-While this pipeline can be employed for quantification of all 7 tasks, it is used only for the [Brain Metastais segmentation task](https://www.synapse.org/Synapse:syn64153130/wiki/631058) in BraTS 2025 challenges.
+While this pipeline can be employed for the quantification of all 7 tasks, it is used only for the [Brain Metastais segmentation task](https://www.synapse.org/Synapse:syn64153130/wiki/631058) in BraTS 2025 challenges.
 
 
 ## Installation
