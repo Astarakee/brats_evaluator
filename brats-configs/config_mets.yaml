@@ -5,14 +5,14 @@ edge_case_handler: !EdgeCaseHandler
   empty_list_std: !EdgeCaseResult NAN
   listmetric_zeroTP_handling:
     !Metric DSC: !MetricZeroTPEdgeCaseHandling {empty_prediction_result: !EdgeCaseResult ZERO,
-      empty_reference_result: !EdgeCaseResult ZERO, no_instances_result: !EdgeCaseResult NAN,
+      empty_reference_result: !EdgeCaseResult ZERO, no_instances_result: !EdgeCaseResult ONE,
       normal: !EdgeCaseResult ZERO}
-    !Metric NSD: !MetricZeroTPEdgeCaseHandling {empty_prediction_result: !EdgeCaseResult INF,
-      empty_reference_result: !EdgeCaseResult INF, no_instances_result: !EdgeCaseResult NAN,
+    !Metric NSD: !MetricZeroTPEdgeCaseHandling {empty_prediction_result: !EdgeCaseResult ZERO,
+      empty_reference_result: !EdgeCaseResult INF, no_instances_result: !EdgeCaseResult ONE,
       normal: !EdgeCaseResult INF}
     !Metric HD95: !MetricZeroTPEdgeCaseHandling {empty_prediction_result: !EdgeCaseResult INF,
-      empty_reference_result: !EdgeCaseResult INF, no_instances_result: !EdgeCaseResult NAN,
-      normal: !EdgeCaseResult INF}
+      empty_reference_result: !EdgeCaseResult ZERO, no_instances_result: !EdgeCaseResult ZERO,
+      normal: !EdgeCaseResult ZERO}
 expected_input: !InputType SEMANTIC
 global_metrics: [!Metric DSC,!Metric NSD, !Metric HD95]
 instance_approximator: !ConnectedComponentsInstanceApproximator {cca_backend: null}
